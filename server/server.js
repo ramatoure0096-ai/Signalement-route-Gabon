@@ -29,9 +29,9 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 app.use('/uploads', express.static('uploads'));
 
-app.post('/signalement', upload.single('photo'), async (req, res) => {
+app.post('/signalements', upload.single('photo'), async (req, res) => {
   try {
-    // CORRECTION : On extrait bien mot_de_passe du corps de la requête
+    
     const { nom, email, mot_de_passe, type_signalement, description, latitude, longitude } = req.body;
     const url_image = req.file ? `/uploads/${req.file.filename}` : '';
 
