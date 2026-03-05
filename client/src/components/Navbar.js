@@ -5,9 +5,9 @@ function Navbar() {
     <nav className="navbar">
       <h2>🚧 Signalement Gabon</h2>
       <div>
-        <Link to="/">Accueil</Link>
+        <Link to="/" style={{ textDecoration: "none" }}>Accueil</Link>
         <a href="#report" style={{ marginLeft: "1rem", color: "white", textDecoration: "none" }}>Signaler</a>
-        <Link to="/admin/login" style={{ marginLeft: "1rem" }}>Admin </Link>
+        <Link to="/admin/login" style={{ marginLeft: "1rem", textDecoration: "none" }}>Admin </Link>
       </div>
     </nav>
   );
