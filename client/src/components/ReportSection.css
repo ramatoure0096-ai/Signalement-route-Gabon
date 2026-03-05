@@ -1,0 +1,144 @@
+.report-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #1e293b;
+  color: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.report-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.report-section .msg {
+  background: #065f46;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.report-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.report-section input,
+.report-section select,
+.report-section textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.report-section textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.report-section button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.report-section button:hover {
+  background: #3b82f6;
+}
+
+.report-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem 3rem;
+  background: #1e293b;
+  color: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+}
+
+.report-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.report-section .msg {
+  background: #065f46;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.report-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; 
+}
+
+/*ajuster les espacement entre les inputs*/
+ .user-info{
+  display: flex;
+  gap: 1.5rem; 
+}                                                               
+
+
+
+
+.report-section textarea{
+  min-height: 150px;
+ 
+}
+
+.report-section input,
+.report-section select,
+.report-section textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.report-section textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.report-section button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.report-section button:hover {
+  background: #3b82f6;
+}
+
+
+.report-section input[type="file"] {
+  background: #334155;
+  color: #f8fafc;
+  padding: 12px;
+  border-radius: 6px;
+}
