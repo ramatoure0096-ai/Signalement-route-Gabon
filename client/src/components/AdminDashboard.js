@@ -43,7 +43,7 @@ function AdminDashboard() {
         </button>
       </div>
 
-      <p>Il y a actuellement **{signalements.length}** signalements en cours. 🔥</p>
+      <p>Il y a actuellement {signalements.length} signalements en cours. </p>
 
       <table border="1" style={{ width: "100%", borderCollapse: "collapse", marginTop: "20px" }}>
         <thead>
