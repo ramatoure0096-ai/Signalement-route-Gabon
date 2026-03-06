@@ -9,11 +9,11 @@ function AdminLogin() {
   const handleLogin = async (e) => {
     e.preventDefault();
     
-    // Debugging : On check ce qu'on envoie 🔍
+   
     console.log("Tentative de connexion pour :", email);
 
     try {
-      // ⚠️ VERIFIE LE PORT : 5000 ou 3000 selon ton serveur Node !
+      
       const res = await fetch("http://localhost:5000/admin/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -26,7 +26,7 @@ function AdminLogin() {
       if (res.ok) {
         localStorage.setItem("adminToken", JSON.stringify(data.admin));
         
-        alert("Connexion réussie ! 🔥");
+        alert("Connexion réussie ! ");
         navigate("/admin/dashboard");
       } else {
         console.log("Erreur de connexion :", data.msg);
@@ -75,7 +75,7 @@ function AdminLogin() {
             marginTop: '10px'
           }}
         >
-          Se connecter 🚀
+          Se connecter 
         </button>
       </form>
     </div>

@@ -6,7 +6,7 @@ function AdminDashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // 1. Check si l'admin est "legit" 🔐
+    
     const admin = localStorage.getItem("adminToken");
     if (!admin) {
       alert("Oups ! Connecte-toi d'abord 🛑");
@@ -14,13 +14,13 @@ function AdminDashboard() {
       return;
     }
 
-    // 2. Récupérer les données du serveur
+   
     fetchSignalements();
   }, [navigate]);
 
   const fetchSignalements = async () => {
     try {
-      // ⚠️ Vérifie bien le PORT (5000 ou 3000) !
+      
       const res = await fetch("http://localhost:5000/tous-signalements");
       const data = await res.json();
       setSignalements(data);
